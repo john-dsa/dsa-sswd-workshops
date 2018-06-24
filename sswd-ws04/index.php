@@ -30,7 +30,8 @@ and open the template in the editor.
         printf($guess1); echo "<br/>";
         printf($guess2); echo "<br/>";
         printf($guess3); echo "<br/>";
-        require_once 'Dice';
+        require_once 'Dice.class.php';
+        require_once 'NumberGenerator.class.php';
         $dice = new Dice();
         //load 3 guesses from user. at the moment pulling all 3 at the same tiem from the querystring..
         $guess1 = $_GET['guess1'];
@@ -38,6 +39,10 @@ and open the template in the editor.
         $guess3 = $_GET['guess3'];
         
         print "Welcome to the Dice guessing program. Thanks for your guesses, lets see how you did .. <br/>";
+        
+        //object gues create
+        $guess = new NumberGenerator();
+        echo '<pre>', print_r(($guess),'true'), '</pre>'; //debug assist
         
         $dice ->throwDice();
         
