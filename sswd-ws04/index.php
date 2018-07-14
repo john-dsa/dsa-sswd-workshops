@@ -1,12 +1,12 @@
 <?php 
 	/*
 		index
-		SSWD Worskshops: mySQL Databases III | the Dice Game
+		TE20_C_FSD - Workshop 12: mySQL Databases III | the Dice Game
 		
 		Rev.1
 
 		Date 13.05.2015
-		@author John Botha
+		@author Agnieszka Pas
 	*/
 ?>
 
@@ -15,7 +15,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>SSWD Worskshops - mySQL Databases III | the Dice Game </title>
+		<title>TE20_C_FSD Workshop 12 - mySQL Databases III | the Dice Game </title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 
@@ -76,6 +76,6 @@
 				}
 			?>
 		</div>
-		<footer >SSWD Worskshops | @ John Botha, 2018</footer>
+		<footer >TE20_C_FSD, Workshop 12 | Made by @ Agnieszka Pas, 2015</footer>
 	</body>
 </html>

@@ -1,7 +1,7 @@
 <?php 
 	/*
 		MyDB.Class
-		SSWD Worskshops: mySQL Databases III | the Dice Game
+		TE20_C_FSD - Workshop 12: mySQL Databases III | the Dice Game
 
 		- description:
 			the program cooperates with the 'my_db' database:
@@ -26,8 +26,8 @@
 
 		Rev.1
 
-		Date 14.07.2018
-		@author John Botha
+		Date 17.05.2015
+		@author Agnieszka Pas
 	*/
 
 

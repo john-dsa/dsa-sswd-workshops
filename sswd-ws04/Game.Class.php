@@ -1,7 +1,7 @@
 <?php 
 	/*
 		Game.Class
-		SSWD Worskshops: mySQL Databases III | the Dice Game
+		TE20_C_FSD - Workshop 12: mySQL Databases III | the Dice Game
 
 		- description:
 			it's the Dice guessing program - 1 dice throw vs. 3 user guesses
@@ -22,8 +22,8 @@
 
 		Rev.1
 
-		Date 14.07.2018
-		@author John Botha
+		Date 17.05.2015
+		@author Agnieszka Pas
 	*/
 
 
