@@ -1,37 +1,41 @@
-<?php 
-	/*
-		Dice.Class
-		TE20_C_FSD - Workshop 12: mySQL Databases III | the Dice Game
+<?php
 
-		- description:
-			the program generates a number to guess for the Game.Class.php usage
+/*
+  SSWD Worskshops the Dice Game
+  - description:
+  it's the Dice guessing program - 1 dice throw vs. 3 user guesses
 
-		- class data:
-			NUMBER_OF_SIDES		// number of sides of the dice
-			$faceValue			// current value of the dice
+  - description:
+  the program generates a number to guess for the Game.Class.php usage
 
-		- class methods:
-			throwDice()			// $faceValue setter
-			getFaceValue()		// $faceValue getter
+  - class data:
+  NUMBER_OF_SIDES		// number of sides of the dice
+  $faceValue			// current value of the dice
+
+  - class methods:
+  throwDice()			// $faceValue setter
+  getFaceValue()		// $faceValue getter
 
 
-		Rev.1
+Rev.1
+  Date 14.07.2018 Author John Botha
+  Adapted by original work from Agnieszka Pas https://github.com/agapas/mini-dice-game.git
+ */
 
-		Date 13.05.2015
-		@author Agnieszka Pas
-	*/
+class Dice {
 
-	class Dice {
-		const NUMBER_OF_SIDES = 6;
-		private $faceValue;
+    const NUMBER_OF_SIDES = 6;
 
-		public function throwDice() {
-			$this->faceValue = rand(1, self::NUMBER_OF_SIDES);	// 1 & NUMBER_OF_SIDES are inclusive values
-		}
+    private $faceValue;
 
-		public function getFaceValue() {
-			return $this->faceValue;
-		}
-	}
-	
+    public function throwDice() {
+        $this->faceValue = rand(1, self::NUMBER_OF_SIDES); // 1 & NUMBER_OF_SIDES are inclusive values
+    }
+
+    public function getFaceValue() {
+        return $this->faceValue;
+    }
+
+}
+
 ?>
