@@ -58,15 +58,21 @@ class MyDB {
     // delete all records from correct_guesses table - called when the users posts form button "reset game"
     public function resetScores() {
         $this->dbQuery = "TRUNCATE TABLE correct_guesses"; //set the content of the dbquery
-        $result = $this->dbConn->query($this->dbQuery) or die($this->getConnError()); //note the method chaining
+        $result = $this->dbConn->query($this->dbQuery) or die($this->getConnError()); //note the method chaining. query() is a built in php function
     }
-
+/*    
+public function getHighScore(){
+    create the query to retrieve the high scores
+    this->>query = "SELECT MAX(score) AS ms FROM score"
+}
+ */
+    
     // display scores as a table
     public function getTable() {
         // create the query to retrieve all data
         $this->dbQuery = "SELECT * FROM correct_guesses";
         // execute the query
-        $result = $this->dbConn->query($this->dbQuery) or die($this->getConnError());
+        $result = $this->dbConn->query($this->dbQuery) or die($this->getConnError()); //query() is a built in php function
         echo "----------------------------------------------------------";
         echo "<h3>Your Score:</h3>";
         echo "<table cellpadding='4'>";
